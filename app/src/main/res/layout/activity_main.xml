@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idNombre"
+        android:textSize="@dimen/tamaño"
+        android:hint="@string/edittext"
+
+        />
+
+        </android.support.design.widget.TextInputLayout>
+
+<android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp">
+
+<EditText
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:inputType="date"
+android:ems="10"
+android:id="@+id/idDate"
+    android:hint="@string/editdate"
+android:textSize="@dimen/tamaño"
+android:layout_below="@+id/idNombre"
+android:layout_centerHorizontal="true"
+       android:enabled="false" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/selectfecha"
+        android:id="@+id/idBoton"
+        android:layout_below="@+id/idDate"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="mostrarCalendario"
+        android:theme="@style/MiBotonRaised"
+        android:textColor="@color/colorBlanco"/>
+
+
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idTel"
+                android:hint="@string/tel"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_below="@+id/idBoton"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/tamaño"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/idEmail"
+        android:hint="@string/email"
+        android:layout_below="@+id/idTel"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/tamaño"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/cescripcion"
+        android:ems="10"
+        android:id="@+id/iddescripcion"
+        android:layout_below="@+id/idEmail"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/tamaño"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/siguiente"
+        android:id="@+id/idBotonSiguiente"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:onClick="Siguiente"
+        android:theme="@style/MiBotonRaised"
+        android:textColor="@color/colorBlanco"/>
+
+</LinearLayout>
